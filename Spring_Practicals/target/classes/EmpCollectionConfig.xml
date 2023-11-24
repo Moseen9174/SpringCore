@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+  http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-4.0.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+	<bean name="employe" class="com.Spring.Employe">
+		<property name="name" value="Moseen" />
+
+		<property name="phones">
+			<list>
+				<value>1</value>
+				<value>2</value>
+				<value>3</value>
+				<value>4</value>
+				<value>5</value>
+			</list>
+		</property>
+
+		<property name="addresses">
+			<set>
+				<value>Indore</value>
+				<value>Dewas</value>
+				<value>Bhopal</value>
+				<value>Sehor</value>
+				<value>Mumbai</value>
+			</set>
+		</property>
+
+		<property name="courses">
+			<map>
+				<entry key="java" value="1month"></entry>
+				<entry key="python" value="2month"></entry>
+			</map>
+		</property>
+
+	</bean>
+
+</beans>
